@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    height: 100dvh;
+}
+
+.personagem{
+    width: 300px;
+    height: 320px;
+    background-image: url('../img/image1.png');
+    background-size: 100% 100%;
+}
+
+.btn{
+    width: 100px;
+    height: 30px;
+    background-color: blue;
+    border-radius: 10px;
+}
+
+.container:hover .personagem{
+    animation: personagem 2s linear infinite;
+}
+
+@keyframes personagem {
+    0%{
+        background-image: url('../img/image1.png');
+    }
+    20%{
+        background-image: url('../img/image2.png');
+    }
+    40%{
+        background-image: url('../img/image3.png');
+    }
+    60%{
+        background-image: url('../img/image4.png');
+    }
+    80%{
+        background-image: url('../img/image5.png');
+    }
+    100%{
+        background-image: url('../img/image6.png');
+    }
+}

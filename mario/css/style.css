@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../img/fundo.png');
+    background-size: 100% 100%;
+    height: 100dvh;
+}
+
+.container{
+    display: flex;
+    height: 85dvh;
+    align-items: end;
+}
+
+.mario{
+    width: 75px;
+    height: 100px;
+    background-image: url('../img/Camada1.png');
+    background-size: 100% 100%;
+}
+
+.mario:hover {
+    animation: andar 5s linear, animacao 2s linear infinite;
+
+}
+
+@keyframes animacao {
+    0%{
+        background-image: url('../img/Camada1.png');
+    }
+    20%{
+        background-image: url('../img/Camada2.png');
+    }
+    40%{
+        background-image: url('../img/Camada3.png');
+    }
+    60%{
+        background-image: url('../img/Camada4.png');
+    }
+    80%{
+        background-image: url('../img/Camada1.png');
+    }
+    100%{
+        background-image: url('../img/Camada2.png');
+    }
+}
+
+@keyframes andar {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(1010px);
+    }
+}
